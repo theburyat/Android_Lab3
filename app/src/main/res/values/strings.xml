@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Android_Lab3</string>
+    <string name="to1">Go to First</string>
+    <string name="to2">Go to Second</string>
+    <string name="to3">Go to Third</string>
+    <string name="about">Some Info</string>
+</resources>
