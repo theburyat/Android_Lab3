@@ -10,9 +10,8 @@ import com.google.android.material.bottomnavigation.BottomNavigationView
 class Activity1_3: AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity1);
+        setContentView(R.layout.activity1)
 
-        supportActionBar?.title = "Activity1"
         val button: Button = findViewById(R.id.f1t2)
         button.setOnClickListener {
             startActivity(Intent(this, Activity2_3::class.java))

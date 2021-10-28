@@ -12,7 +12,6 @@ class Activity3_4 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity3)
-        supportActionBar?.title = "Activity3"
 
         val button1: Button = findViewById(R.id.f3t1)
         button1.setOnClickListener {

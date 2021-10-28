@@ -12,12 +12,11 @@ class Activity3_3: AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity3)
-        supportActionBar?.title = "Activity3"
 
         val button1: Button = findViewById(R.id.f3t1)
         button1.setOnClickListener {
             val clearFlag = Intent.FLAG_ACTIVITY_CLEAR_TOP
-            startActivity(Intent(this, Activity1_3::class.java).addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP))
+            startActivity(Intent(this, Activity1_3::class.java).addFlags(clearFlag))
         }
 
         val button2: Button = findViewById(R.id.f3t2)

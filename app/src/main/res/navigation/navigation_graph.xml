@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/host_fragment"
+    app:startDestination="@id/fr1">
+
+    <fragment
+        android:id="@+id/fr1"
+        android:name="com.example.android_lab3.task5.Fragment1"
+        tools:layout="@layout/fragment1"
+        android:label="Fragment 1" >
+        <action
+            android:id="@+id/f1t2frag"
+            app:destination="@id/fr2" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/fr2"
+        android:name="com.example.android_lab3.task5.Fragment2"
+        tools:layout="@layout/fragment2"
+        android:label="Fragment 2" >
+        <action
+            android:id="@+id/f2t3frag"
+            app:destination="@id/fr3" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/fr3"
+        android:name="com.example.android_lab3.task5.Fragment3"
+        tools:layout="@layout/fragment3"
+        android:label="Fragment 3" />
+
+    <action
+        android:id="@+id/aboutfrag"
+        app:destination="@id/aboutActf" />
+
+    <activity
+        android:id="@+id/aboutActf"
+        android:name="com.example.android_lab3.task5.ActivityAbout_5"
+        tools:layout="@layout/activity_about"
+        android:label="About" />
+
+</navigation>

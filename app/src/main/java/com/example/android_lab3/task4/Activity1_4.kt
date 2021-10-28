@@ -10,9 +10,8 @@ import com.google.android.material.bottomnavigation.BottomNavigationView
 class Activity1_4: AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity1);
+        setContentView(R.layout.activity1)
 
-        supportActionBar?.title = "Activity1"
         val button: Button = findViewById(R.id.f1t2)
         button.setOnClickListener {
             val withoutAnimationFlag = Intent.FLAG_ACTIVITY_NO_ANIMATION
