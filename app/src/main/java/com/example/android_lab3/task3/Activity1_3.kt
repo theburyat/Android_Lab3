@@ -12,14 +12,14 @@ class Activity1_3: AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity1)
 
-        val button: Button = findViewById(R.id.f1t2)
+        val button: Button = findViewById(R.id.bnToSecond)
         button.setOnClickListener {
             startActivity(Intent(this, Activity2_3::class.java))
         }
 
-        val bottom: BottomNavigationView = findViewById(R.id.bottom_navigation_view)
+        val bottom: BottomNavigationView = findViewById(R.id.nav_view)
         bottom.setOnItemSelectedListener { item ->
-            if (item.itemId == R.id.item_about)
+            if (item.itemId == R.id.aboutActivity)
                 startActivity(Intent(this, ActivityAbout_3::class.java))
             return@setOnItemSelectedListener true
         }

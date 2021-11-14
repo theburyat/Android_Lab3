@@ -3,6 +3,7 @@
     <string name="to1">Go to First</string>
     <string name="to2">Go to Second</string>
     <string name="to3">Go to Third</string>
-    <string name="about">Some Info</string>
+    <string name="title_about">Some Info</string>
+    <string name="text_about">About text</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

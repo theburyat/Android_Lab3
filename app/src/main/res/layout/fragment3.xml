@@ -2,10 +2,11 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:id="@+id/fragment3"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <Button
-        android:id="@+id/f3t2f"
+        android:id="@+id/bnToSecond"
         android:text="@string/to2"
         android:layout_width="0dp"
         android:layout_height="0dp"
@@ -15,10 +16,10 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/f3t1f"/>
+        app:layout_constraintBottom_toTopOf="@id/bnToFirst"/>
 
     <Button
-        android:id="@+id/f3t1f"
+        android:id="@+id/bnToFirst"
         android:text="@string/to1"
         android:layout_width="0dp"
         android:layout_height="0dp"
@@ -27,10 +28,10 @@
         android:layout_marginTop="50dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/f3t2f"/>
+        app:layout_constraintTop_toBottomOf="@id/bnToSecond"/>
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/bottom_navigation_view"
+        android:id="@+id/nav_view"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         app:layout_constraintStart_toStartOf="parent"

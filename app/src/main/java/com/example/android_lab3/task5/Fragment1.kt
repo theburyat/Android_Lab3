@@ -22,15 +22,15 @@ class Fragment1: Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        val button: Button = view.findViewById(R.id.f1t2f)
+        val button: Button = view.findViewById(R.id.bnToSecond)
         button.setOnClickListener {
             findNavController().navigate(R.id.f1t2frag)
         }
 
-        val bottom: BottomNavigationView = view.findViewById(R.id.bottom_navigation_view)
+        val bottom: BottomNavigationView = view.findViewById(R.id.nav_view)
         bottom.setOnItemSelectedListener { item ->
-            if (item.itemId == R.id.item_about)
-                findNavController().navigate(R.id.aboutActf)
+            if (item.itemId == R.id.aboutActivity)
+                findNavController().navigate(R.id.aboutfrag)
             return@setOnItemSelectedListener true
         }
     }

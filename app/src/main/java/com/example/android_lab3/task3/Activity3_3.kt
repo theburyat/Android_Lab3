@@ -13,20 +13,20 @@ class Activity3_3: AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity3)
 
-        val button1: Button = findViewById(R.id.f3t1)
+        val button1: Button = findViewById(R.id.bnToFirst)
         button1.setOnClickListener {
             val clearFlag = Intent.FLAG_ACTIVITY_CLEAR_TOP
             startActivity(Intent(this, Activity1_3::class.java).addFlags(clearFlag))
         }
 
-        val button2: Button = findViewById(R.id.f3t2)
+        val button2: Button = findViewById(R.id.bnToSecond)
         button2.setOnClickListener {
             finish()
         }
 
-        val bottom: BottomNavigationView = findViewById(R.id.bottom_navigation_view)
+        val bottom: BottomNavigationView = findViewById(R.id.nav_view)
         bottom.setOnItemSelectedListener { item ->
-            if (item.itemId == R.id.item_about)
+            if (item.itemId == R.id.aboutActivity)
                 startActivity(Intent(this, ActivityAbout_3::class.java))
             return@setOnItemSelectedListener true
         }
