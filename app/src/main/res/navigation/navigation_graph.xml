@@ -23,13 +23,23 @@
         <action
             android:id="@+id/f2t3frag"
             app:destination="@id/fragment3" />
+        <action
+            android:id="@+id/f2t1frag"
+            app:popUpTo="@id/fragment1" />
     </fragment>
 
     <fragment
         android:id="@+id/fragment3"
         android:name="com.example.android_lab3.task5.Fragment3"
-        tools:layout="@layout/fragment3"
-        android:label="Fragment 3" />
+        android:label="Fragment 3"
+        tools:layout="@layout/fragment3">
+        <action
+            android:id="@+id/f3t2frag"
+            app:popUpTo="@id/fragment2" />
+        <action
+            android:id="@+id/f3t1frag"
+            app:popUpTo="@id/fragment1" />
+    </fragment>
 
     <action
         android:id="@+id/aboutfrag"

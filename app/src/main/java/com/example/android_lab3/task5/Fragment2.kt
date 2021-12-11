@@ -29,14 +29,7 @@ class Fragment2: Fragment() {
 
         val button2: Button = view.findViewById(R.id.bnToFirst)
         button2.setOnClickListener {
-            findNavController().popBackStack()
-        }
-
-        val bottom: BottomNavigationView = view.findViewById(R.id.nav_view)
-        bottom.setOnItemSelectedListener { item ->
-            if (item.itemId == R.id.aboutActivity)
-                findNavController().navigate(R.id.aboutfrag)
-            return@setOnItemSelectedListener true
+            findNavController().navigate(R.id.f2t1frag)
         }
     }
 }

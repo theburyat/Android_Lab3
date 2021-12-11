@@ -24,19 +24,12 @@ class Fragment3: Fragment() {
 
         val button1: Button = view.findViewById(R.id.bnToFirst)
         button1.setOnClickListener {
-            findNavController().popBackStack(R.id.fragment1, false)
+            findNavController().navigate(R.id.f3t1frag)
         }
 
         val button2: Button = view.findViewById(R.id.bnToSecond)
         button2.setOnClickListener {
-            findNavController().popBackStack()
-        }
-
-        val bottom: BottomNavigationView = view.findViewById(R.id.nav_view)
-        bottom.setOnItemSelectedListener { item ->
-            if (item.itemId == R.id.aboutActivity)
-                findNavController().navigate(R.id.aboutfrag)
-            return@setOnItemSelectedListener true
+            findNavController().navigate(R.id.f3t2frag)
         }
     }
 }

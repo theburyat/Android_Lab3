@@ -26,12 +26,5 @@ class Fragment1: Fragment() {
         button.setOnClickListener {
             findNavController().navigate(R.id.f1t2frag)
         }
-
-        val bottom: BottomNavigationView = view.findViewById(R.id.nav_view)
-        bottom.setOnItemSelectedListener { item ->
-            if (item.itemId == R.id.aboutActivity)
-                findNavController().navigate(R.id.aboutfrag)
-            return@setOnItemSelectedListener true
-        }
     }
 }

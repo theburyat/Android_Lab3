@@ -10,7 +10,7 @@ import com.google.android.material.bottomnavigation.BottomNavigationView
 class Activity3_2: AppCompatActivity() {
     companion object {
         const val REQUEST = 1
-        const val GO_TO_1 = 1
+        const val GO_TO_1 = 666
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
